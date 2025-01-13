@@ -34,7 +34,7 @@ func (q *Queue) Front() (interface{}, error) {
 }
 
 func (q *Queue) Push(val interface{}) {
-	q.isEmpty = true
+	q.isEmpty = false
 	if q.start == 0 && q.end == len(q.value)-1 {
 		q.value = append(q.value, val)
 		q.end++

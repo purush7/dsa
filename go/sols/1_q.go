@@ -58,7 +58,11 @@ Now traverse and form the order
 
 // q1 takes no of courses and prerequisties list, where courses are numbers and returns the order of courses to finish
 func Q1(n int, prereqs [][]int) ([]int, error) {
-	return dfs(n, prereqs)
+	// r := lib.RandomInt(2)
+	// if r%2 == 0 {
+	return bfs(n, prereqs)
+	// }
+	// return dfs(n, prereqs)
 }
 
 func bfs(n int, prereqs [][]int) ([]int, error) {
